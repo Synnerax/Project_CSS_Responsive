@@ -3,47 +3,47 @@ body {
     background-color: #f0f0f0;
 
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-    header {
-        grid-column: -1 / 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: linear-gradient(45deg, #13293d, #142f4b);
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 1000px;
+        margin: auto;
     }
-        header img {
-            width: 250px;
-        }
-            header a {
-                font-size: 145%;
-                text-decoration: none;
-                margin: 0 .5rem;
-                color: wheat;
-            }
 
-            header > a:nth-child(2) {
-                align-self: flex-end;
-                position: absolute;
-                margin: 3rem;
-                font-size: 200%;
-            }
-       
-
-
-        nav {
-            width: 100%;
+        header {
+            grid-column: -1 / 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-around;
-            letter-spacing: 1px;
+            background: linear-gradient(45deg, #13293d, #142f4b);
         }
-            nav a {
-                padding: 1rem 0;
+            header img {
+                width: 250px;
             }
+                header a {
+                    font-size: 145%;
+                    text-decoration: none;
+                    margin: 0 .5rem;
+                    color: wheat;
+                }
+
+                header > a:nth-child(2) {
+                    align-self: flex-end;
+                    position: absolute;
+                    margin: 3rem;
+                    font-size: 200%;
+                }
+        
+                nav {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    letter-spacing: 1px;
+                }
+                    nav a {
+                        padding: 1rem 0;
+                    }
 
 
 .main-image {
@@ -58,46 +58,46 @@ body {
     background-size: 100% 100%;
 }
 
-.main-image > h1 {
-    color: white;
-    font-size: 3rem;
-    text-shadow: 2px 2px black;
-    font-style: italic;
-}
+    .main-image > h1 {
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 2px black;
+        font-style: italic;
+    }
 
 
 
 
-.main-image > a {
-    background-color:white;
-    width: 15rem;
-    height: 5rem;
-    margin-bottom: 2rem;
-    
-    font-size: 2rem;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: padding 1s;
-}
+        .main-image > a {
+            background-color:white;
+            width: 15rem;
+            height: 5rem;
+            margin-bottom: 2rem;
+            
+            font-size: 2rem;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: padding 1s;
+        }
 
-.main-image > a:after {
-    content: '»';
-    margin-left: 3rem;
-    opacity: 0;  
-    transition: 0.5s;
-  }
+            .main-image > a:after {
+                content: '»';
+                margin-left: 3rem;
+                opacity: 0;  
+                transition: 0.5s;
+            }
 
-.main-image > a:hover{
-    padding-right: 1rem;
-    
-}
+            .main-image > a:hover{
+                padding-right: 1rem;
+                
+            }
 
-.main-image > a:hover:after {
-    opacity: 1;
-    right: 10px;
-  }
+            .main-image > a:hover:after {
+                opacity: 1;
+                right: 10px;
+            }
 
 
 
@@ -117,32 +117,32 @@ main {
     align-items: center;
 }
 
-.small-images:nth-child(1) > a {
-    width: 15rem;
-    height: 3rem;
-    text-decoration: none;
-    display: flex;
-    font-size: 2rem;
-    color: white;
-    margin: 2rem 0;
-    align-items: center;
-    border: 5px solid black;
-    padding: 0 3rem;
-   }
+    .small-images:nth-child(1) > a {
+        width: 15rem;
+        height: 3rem;
+        text-decoration: none;
+        display: flex;
+        font-size: 2rem;
+        color: white;
+        margin: 2rem 0;
+        align-items: center;
+        border: 5px solid black;
+        padding: 0 2rem;
+    }
 
-   /*Take away or catering*/
-   .small-images:nth-child(1) > a > i {
-       margin-right: 2rem;
-   }
-        .small-images:nth-child(1){
-            background-color:#13293d;
+    /*Take away or catering*/
+    .small-images:nth-child(1){
+        background-color:#13293d;
+    }
+        .small-images:nth-child(1) > a > i {
+            margin-right: 2rem;
         }
 
-        .small-images:nth-child(1) > a > h2 {
-            font-size: 2rem;
-           }
+            .small-images:nth-child(1) > a > h2 {
+                font-size: 2rem;
+            }
            
-
+ 
         /*pricing*/
 .small-images:nth-child(2){
     background-color: white;
@@ -156,6 +156,7 @@ main {
         display: flex;
         flex-direction: column;
         overflow: scroll;
+        overflow-x: hidden;
         width: 75%;
         height: 70%;
     }
@@ -163,6 +164,11 @@ main {
     #pricing-list > * {
         border-radius: 5px;
         box-shadow: inset 0px 0px 100px #13293d;
+        padding-left: 5px;
+        text-shadow: 0px 0px 30px black;
+      }
+      .pricing-wrapper{
+          margin-bottom: 10px;
       }
 
         .pricing-list-choice {
@@ -171,13 +177,13 @@ main {
             
         }
             p.pricing-list-item{
-                font-size: 140%;
+                font-size: 105%;
                 
             }
 
 
             p.pricing-list-item > span:nth-child(1) {
-                color: gray;
+                color: #726464;
                 font-size: 50%;
             }
 
@@ -186,10 +192,34 @@ main {
                 float: right;
                 margin-right: 1rem;
                }
+
                
 
 
         /*About*/
+
+        .small-images:nth-child(3){
+            background-color: #13293d;
+        }
+
+        .small-images:nth-child(3)  h2 {
+            width: 20rem;
+            border: 3px solid;
+            text-align: center;
+            letter-spacing: .2rem;
+        }
+        
+            .small-images:nth-child(3)  p {
+                text-align: center;
+                margin: 2rem 3rem;
+            }
+            
+            
+            .small-images:nth-child(3) > img {
+                background-size: contain;
+                width: 85%;
+                
+            }
         .about {
             display: flex;
             flex-direction: column;
@@ -200,7 +230,10 @@ main {
            .about p,h2 {
                color: white;
            }
-
+           
+           .about > p {
+            z-index: 1;
+           }
            .about::after {
             content: "";
             background: url(../img/aboutkettle.png);
@@ -214,36 +247,11 @@ main {
             background-repeat: no-repeat;
             
           }
+          
+           
+           
 
- 
-           
-           .about > p {
-            z-index: 1;
-           }
-           
-           
-.small-images:nth-child(3){
-    background-color: #13293d;
-}
 
-    section.small-images:nth-child(3)  h2 {
-        width: 20rem;
-        border: 3px solid;
-        text-align: center;
-        letter-spacing: .2rem;
-    }
-    
-    section.small-images:nth-child(3)  p {
-        text-align: center;
-        margin: 2rem 3rem;
-       }
-       
-    
-       section.small-images:nth-child(3) > img {
-        background-size: contain;
-        width: 85%;
-        
-       }
        
 .small-images:nth-child(4){
     background-color: white;
@@ -298,82 +306,6 @@ footer > img {
    }
    
 
-@media only screen and (min-width: 600px) {
-    .wrapper {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    a.icon {
-        display: none;
-    }
-
-    .small-images:nth-child(1) {
-        flex-direction: row;
-        justify-content: space-evenly;
-    } 
-
-    .small-images:nth-child(3) {
-        display: flex;
-        flex-direction: row;
-    }
-
-
-    section.small-images:nth-child(3) > img {
-        background-size: contain;
-        width: 45%;
-}
-    #pricing-list{
-        flex-wrap: wrap;
-        flex-direction: row;
-        
-    }
-        .pricing-wrapper{
-            width: 47%;
-            margin: 4px;
-        }
-   
-
-        .about {
-            width: 55%;
-            
-        }
-
-
-
-        
-}
-
-@media only screen and (min-width: 900px) {
-
-    .about img {
-        top:130%;
-    }
-
-    .about::after{
-        left: 0;
-
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav a {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-
-    }
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: relative;
-      left: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-}
-
 
 
 /*Order page*/
@@ -387,10 +319,6 @@ footer > img {
     background-color: #f0f0f0;
     margin: 0;
    }
-
-   
-   
-
    .food-header{
     background: linear-gradient(to right, #3d3d3d,#cbcbcb, #f0f0f0);
     padding-bottom: 5px;
@@ -455,3 +383,81 @@ footer > img {
 .food-wrapper {
     display: flex;
 }
+
+
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    a.icon {
+        display: none;
+    }
+
+    .small-images:nth-child(1) {
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+
+    .small-images:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    section.small-images:nth-child(3) > img {
+        background-size: contain;
+        width: 45%;
+}
+    #pricing-list{
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+        .pricing-wrapper{
+            width: 47%;
+            margin: 4px ;
+        }
+   
+
+        .about {
+            width: 55%;
+            
+        }
+
+
+
+        
+}
+
+@media only screen and (min-width: 900px) {
+
+    .about img {
+        top:130%;
+    }
+
+    .about::after{
+        left: 0;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
